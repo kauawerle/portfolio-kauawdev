@@ -1,9 +1,10 @@
-import cover from '@/images/cover.png';
+import cover from '@/images/portfolio-eu.jpg';
 import Image from "next/image";
 
 export function AboutComponent() {
   return (
     <section
+      id="about"
       className="lg:py-24 py-32 drop-shadow-md bg-[url('images/background_about.svg')]  
         bg-no-repeat bg-background bg-right-bottom "
     >
