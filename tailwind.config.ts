@@ -26,7 +26,7 @@ export default {
       },
       fontFamily: {
         sans: ['var(--font-helvetica)'],
-        display: 'var(--font-lexend)',
+        display: 'var(--font-inter)',
       },
       maxWidth: {
         '2xl': '40rem',
