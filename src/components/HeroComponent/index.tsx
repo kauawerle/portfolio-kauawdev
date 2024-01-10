@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import darthDev from '@/images/darth-dev.png';
 
-export default function HeroComponent({ onInput }) {
+export default function HeroComponent({ onInput }: any) {
   return (
     <main
       className={`lg:p-12
