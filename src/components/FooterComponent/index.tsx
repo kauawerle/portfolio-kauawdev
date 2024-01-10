@@ -5,9 +5,7 @@ const navigation = {
     {
       name: 'Email',
       href: 'mailto:kauawerle19@gmail.com',
-    },
-    { name: 'Accessibility', href: '#' },
-    { name: 'Partners', href: '#' },
+    }
   ],
   social: [
     {
@@ -50,14 +48,14 @@ export default function FooterComponent() {
     <footer className="w-full border-2 border-[#080924] border-t-[#080924] bg-background">
       <div className="mx-auto max-w-7xl overflow-hidden  py-24 lg:px-8 lg:py-20">
         <nav
-          className="-mb-6 flex w-full columns-2 flex-col items-center justify-center space-x-12 lg:flex-row"
+          className="-mb-6 flex w-full columns-2 flex-row items-center justify-center space-x-12 "
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
             <div key={item.name} className="pb-6">
               <a
                 href={item.href}
-                className="text-sm leading-6 text-white hover:text-text"
+                className="text-md leading-6 text-white hover:text-text"
               >
                 {item.name}
               </a>

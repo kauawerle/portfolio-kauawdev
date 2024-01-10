@@ -2,16 +2,19 @@ import GridComponents from "../GridComponents";
 
 export default function ProjectsComponents() {
   return (
-    <section id="projects" className="h-auto md:h-[160vh] lg:h-auto 2xl:h-[130vh] bg-background">
-      <div className="flex justify-center py-8 flex-col items-center w-full">
-        <h3 className="mt-[5rem] text-text text-center lg:text-left text-5xl">
+    <section
+      id="projects"
+      className="h-auto bg-background md:h-[160vh] lg:h-auto 2xl:h-[130vh]"
+    >
+      <div className="flex w-full flex-col items-center justify-center py-8">
+        <h3 className="mt-[5rem] px-8 text-left text-5xl text-text lg:p-0">
           Projetos Realizados
         </h3>
-        <strong className="mt-3 w-[90%] lg:w-[20%] text-center text-text text-2xl">
+        <strong className="mt-3 w-full px-8 text-left text-xl lg:text-2xl text-text lg:w-[20%] lg:p-0 lg:text-center">
           Alguns projetos realizados e expêriencias que adquiri
         </strong>
         <GridComponents />
       </div>
     </section>
-  );
+  )
 }
