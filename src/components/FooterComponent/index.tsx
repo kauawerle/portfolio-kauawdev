@@ -5,7 +5,7 @@ const navigation = {
     {
       name: 'Email',
       href: 'mailto:kauawerle19@gmail.com',
-    }
+    },
   ],
   social: [
     {
@@ -76,7 +76,7 @@ export default function FooterComponent() {
           ))}
         </div>
         <p className="mt-10 text-center text-xs leading-5 text-white">
-          &copy; 2023 Kauã Werle, Inc. All rights reserved.
+          &copy; 2023 - 2024 Kauã Werle, Inc. All rights reserved.
         </p>
       </div>
     </footer>

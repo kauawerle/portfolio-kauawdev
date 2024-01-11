@@ -11,8 +11,6 @@ import { AboutComponent } from "@/components/AboutComponent";
 import FooterComponent from "@/components/FooterComponent";
 import HeroComponent from "@/components/HeroComponent";
 import ProjectsComponents from "@/components/ProjectsComponent";
-import { navigationProps } from "@/interfaces/navigationProps";
-import { Inter } from "next/font/google";
 
 const cascadia = localFont({
   src: [
@@ -24,32 +22,6 @@ const cascadia = localFont({
   variable: "--font-helvetica",
 });
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
-
-
-const navigation: navigationProps[] = [
-  {
-    name: "Home",
-    href: "#",
-    isActivate: true,
-  },
-  {
-    name: "Projects",
-    href: "#",
-  },
-  {
-    name: "About",
-    href: "#",
-  },
-  {
-    name: "Contact",
-    href: "#",
-  },
-];
 
 const IndexPage = () => {
   const [showAboutSection, setShowAboutSection] = useState(false);
@@ -62,7 +34,7 @@ const IndexPage = () => {
       });
       setShowAboutSection(true);
     } else if (inputValue === "no" || inputValue === "n") {
-      toast.error("😭😭", {
+      toast.dark("😭😭", {
         position: toast.POSITION.TOP_RIGHT,
       });
     }
