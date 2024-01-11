@@ -12,7 +12,7 @@ import FooterComponent from "@/components/FooterComponent";
 import HeroComponent from "@/components/HeroComponent";
 import ProjectsComponents from "@/components/ProjectsComponent";
 import { navigationProps } from "@/interfaces/navigationProps";
-import { Inter, Lexend } from "next/font/google";
+import { Inter } from "next/font/google";
 
 const cascadia = localFont({
   src: [
@@ -30,11 +30,6 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-const lexend = Lexend({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-lexend',
-})
 
 const navigation: navigationProps[] = [
   {

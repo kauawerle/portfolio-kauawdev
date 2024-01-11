@@ -33,7 +33,7 @@ export function AboutComponent() {
               className="h-full rounded-lg w-full object-cover"
             />
           </div>
-          <div className="ml-10">
+          <div className="ml-4 lg:ml-10">
             <div className="text-base font-sofia leading-7 text-text lg:max-w-lg">
               <p className="text-primary text-left text-xl font-semibold leading-7">
                 Quem é
@@ -41,7 +41,7 @@ export function AboutComponent() {
               <h1 className="mt-2 text-3xl text-left font-bold tracking-tight text-text sm:text-4xl">
                 Kauã Werle
               </h1>
-              <div className="max-w-3xl text-white text-left text-lg font-semibold">
+              <div className="max-w-5xl lg:max-w-3xl text-white text-left text-md lg:text-lg font-semibold">
                 <p className="mt-6">
                   Comecei a estudar programação e trabalhar aos 15 anos de
                   idade, cursei técnico em informática do Mondrone em 2019, meu
