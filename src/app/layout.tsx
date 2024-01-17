@@ -1,7 +1,7 @@
 import clsx from 'clsx'
-import { Inter } from 'next/font/google'
 
 import '@/global.css'
+import localFont from '@next/font/local'
 import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -12,13 +12,16 @@ export const metadata: Metadata = {
   description: 'KauaWDev - Developer Web',
 }
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
+
+const cascadia = localFont({
+  src: [
+    {
+      path: '../fonts/cascadia-code.ttf',
+      weight: '800',
+    },
+  ],
+  variable: '--font-helvetica',
 })
-
-
 
 export default function RootLayout({
   children,
@@ -28,10 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
-        inter.variable,
-      )}
+      className={clsx('h-full scroll-smooth bg-white antialiased', cascadia.variable)}
     >
       <body className="flex h-full flex-col">{children}</body>
     </html>

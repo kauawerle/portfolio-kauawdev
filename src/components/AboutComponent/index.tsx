@@ -5,65 +5,69 @@ export function AboutComponent() {
   return (
     <section
       id="about"
-      className="lg:py-24 py-32 drop-shadow-md bg-[url('images/background_about.svg')]  
-        bg-no-repeat bg-background bg-right-bottom "
+      className="bg-background bg-[url('images/background_about.svg')] bg-right-bottom bg-no-repeat  
+        py-32 drop-shadow-md lg:py-24 "
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div
           className="
-            lg:grid
-            max-w-2xl
             flex
-            justify-center
+            max-w-2xl
             flex-col
             items-center
-            lg:items-start
+            justify-center
             gap-x-8
             gap-y-16
             lg:mx-0
+            lg:grid
             lg:max-w-none
-            lg:grid-cols-2">
-          <div >
+            lg:grid-cols-2
+            lg:items-start"
+        >
+          <div>
             <Image
               height={556}
               width={512}
               alt=""
               quality={100}
               src={cover}
-              className="h-full rounded-lg w-full object-cover"
+              className="h-full w-full rounded-lg object-cover"
             />
           </div>
           <div className="ml-4 lg:ml-10">
-            <div className="text-base font-sofia leading-7 text-text lg:max-w-lg">
+            <div className="font-sofia text-base leading-7 text-text lg:max-w-lg">
               <p className="text-primary text-left text-xl font-semibold leading-7">
-                Quem é
+                Who is
               </p>
-              <h1 className="mt-2 text-3xl text-left font-bold tracking-tight text-text sm:text-4xl">
+              <h1 className="mt-2 text-left text-3xl font-bold tracking-tight text-text sm:text-4xl">
                 Kauã Werle
               </h1>
-              <div className="max-w-5xl lg:max-w-3xl text-white text-left text-md lg:text-lg font-semibold">
+              <div className="text-md max-w-5xl text-left font-semibold text-white lg:max-w-3xl lg:text-lg">
                 <p className="mt-6">
-                  Comecei a estudar programação e trabalhar aos 15 anos de
-                  idade, cursei técnico em informática do Mondrone em 2019, meu
-                  primeiro emprego foi logo depois Na Trend Mobile onde eu tive
-                  meu primeiro conhecimento sobre a área.
+                  I began studying programming and working at the age of 15. I
+                  enrolled in the computer science technical course at Mondrone
+                  in 2019, and my first job followed shortly thereafter at Trend
+                  Mobile, where I gained my initial insights into the field.
                 </p>
                 <p className="mt-8">
-                  Na Trend Mobile trabalhei com as tecnologias Ionic, Angular e
-                  Bootstrap. Trabalhei na Trend Mobile até 2021, logo depois
-                  Comecei a trabalhar na Cemapa Informática utilizando Delphi.
+                  During my time at Trend Mobile, I worked with technologies
+                  such as Ionic, Angular, and Bootstrap. I continued there until
+                  2021, after which I transitioned to Cemapa Informática, where
+                  I utilized Delphi.
                 </p>
                 <p className="mt-8">
-                  Em novembro de 2021 eu entrei na Digitaldoc, trabalhando com
-                  Angular, VueJs, Node e C#. Trabalhei até novembro de 2022 e
-                  finalizei meu curso técnico em informática apresentando meu
-                  TCC, usando tecnologias novas (React, React Native, NodeJs,
-                  Typescript, Postgres e Sequelize).
+                  In November 2021, I joined Digitaldoc, working with Angular,
+                  VueJs, Node, and C#. I stayed there until November 2022,
+                  concurrently completing my computer science technical course
+                  by presenting my thesis, which incorporated new technologies
+                  such as React, React Native, NodeJs, TypeScript, Postgres, and
+                  Sequelize.
                 </p>
                 <p className="mt-8">
-                  Em março de 2023 comecei a faculdade Bacharelado em Engenharia
-                  de software e trabalhei fazendo Free Lancer para
-                  OptimizeDeals, utilizando React, Node, Typescript e tailwind.
+                  In March 2023, I commenced my Bachelor&apos;s degree in
+                  Software Engineering and simultaneously undertook freelance
+                  work for OptimizeDeals, employing React, Node, TypeScript, and
+                  Tailwind.
                 </p>
               </div>
             </div>
@@ -71,5 +75,5 @@ export function AboutComponent() {
         </div>
       </div>
     </section>
-  );
+  )
 }

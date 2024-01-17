@@ -1,7 +1,7 @@
 const navigation = {
   main: [
-    { name: 'Sobre', href: '#about' },
-    { name: 'Projetos', href: '#projects' },
+    { name: 'About', href: '#about' },
+    { name: 'Projects', href: '#projects' },
     {
       name: 'Email',
       href: 'mailto:kauawerle19@gmail.com',
