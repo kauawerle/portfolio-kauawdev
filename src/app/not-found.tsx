@@ -1,13 +1,12 @@
-import Link from 'next/link'
 
 
 export default function NotFound() {
   return (
     <>
       <div className="flex">
-        <Link href="/" aria-label="Home">
+        <a href="/" aria-label="Home">
           teste
-        </Link>
+        </a>
       </div>
       <p className="mt-20 text-sm font-medium text-gray-700">404</p>
       <h1 className="mt-3 text-lg font-semibold text-gray-900">

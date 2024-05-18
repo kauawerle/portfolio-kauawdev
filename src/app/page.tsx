@@ -11,6 +11,7 @@ import { AboutComponent } from "@/components/AboutComponent";
 import FooterComponent from "@/components/FooterComponent";
 import HeroComponent from "@/components/HeroComponent";
 import ProjectsComponents from "@/components/ProjectsComponent";
+import GitHubRepos from "@/components/RepositoryComponent";
 
 const cascadia = localFont({
   src: [
@@ -29,9 +30,9 @@ const IndexPage = () => {
   const handleInput = (event: any) => {
     const inputValue = event.target.value.toLowerCase();
     if (inputValue === "yes" || inputValue === "y") {
-      toast.dark("Conquista Desbloqueada! 🚀", {
+      toast.dark('Achievement Unlocked! 🚀', {
         position: toast.POSITION.TOP_RIGHT,
-      });
+      })
       setShowAboutSection(true);
     } else if (inputValue === "no" || inputValue === "n") {
       toast.dark("😭😭", {
@@ -49,12 +50,13 @@ const IndexPage = () => {
           <React.Suspense fallback={<div>Loading...</div>}>
             <AboutComponent />
             <ProjectsComponents />
+            <GitHubRepos/>
             <FooterComponent />
           </React.Suspense>
         )}
       </>
     </html>
-  );
+  )
 };
 
 export default IndexPage;

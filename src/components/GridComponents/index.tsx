@@ -11,47 +11,47 @@ import vipus from "@/images/projects/vipus.png";
 
 const projects: projectProps[] = [
   {
-    name: "Vipus",
+    name: 'Vipus',
     image: vipus,
     description:
-      "Construi a Vipus utilizando Ionic, Angular, Typescript e bootstrap ano de 2019",
-    link: "https://play.google.com/store/apps/details?id=com.i9plus.store.app&hl=pt_BR&gl=US",
+      'I built Vipus using Ionic, Angular, TypeScript, and Bootstrap in the year 2019.',
+    link: 'https://play.google.com/store/apps/details?id=com.i9plus.store.app&hl=pt_BR&gl=US',
   },
   {
-    name: "Digitaldoc",
+    name: 'Digitaldoc',
     image: digitaldoc,
     description:
-      "Trabalhei e evolui o Digitaldoc utilizando Angular, bootstrap e C#. Ano de 2021 a 2022",
-    link: "https://digitaldoc.com.br",
+      'I work and evolved the Digitaldoc using Angular, bootstrap and C#. In the year 2021 to 2022',
+    link: 'https://digitaldoc.com.br',
   },
   {
-    name: "Eatos",
+    name: 'Eatos',
     image: eatos,
     description:
-      "Trabalhei com o Eatos utilizando Angular, bootstrap e C#. Ano de 2021 a 2022",
-    link: "https://publicacoesmunicipais.com.br/eatos/",
+      'I work with the Eatos using Angular, bootstrap and C#. In the year 2021 to 2022',
+    link: 'https://publicacoesmunicipais.com.br/eatos/',
   },
   {
-    name: "Certificata",
+    name: 'Certificata',
     image: certificata,
     description:
-      "Trabalhei com certificata utilizando VueJs e typescript. Ano de 2022",
-    link: "https://digitaldoc.com.br/certificata/",
+      'I work with the certificata using VueJs and typescript. In the year 2022',
+    link: 'https://digitaldoc.com.br/certificata/',
   },
   {
-    name: "Optimize",
+    name: 'Optimize',
     image: optimize,
     description:
-      "Construi a Optimize utilizando React, Next, Typescript, Node e Tailwind ano de 2023",
-    link: "https://optimize.deals",
+      'I built a Optimize using React, Next, Typescript, Node and Tailwind in the year 2023',
+    link: 'https://app.optimize.deals',
   },
   {
-    name: "ProfissionalAAA",
+    name: 'ProfissionalAAA',
     image: profissional,
-    description: "Portfólio e curso do Profissional AAA em 2023",
-    link: "https://www.gustavomaciel.xyz",
+    description: 'Portfolio and course of Profissional AAA in the year 2023',
+    link: 'https://www.gustavomaciel.xyz',
   },
-];
+]
 
 export default function GridComponents() {
   return (
