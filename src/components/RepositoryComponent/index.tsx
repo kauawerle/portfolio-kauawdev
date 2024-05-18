@@ -1,6 +1,5 @@
 import { repositoriesProps } from '@/interfaces/repositoriesProps'
 import axios from 'axios'
-import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 import AliceCarousel from 'react-alice-carousel'
@@ -21,6 +20,7 @@ const GitHubRepos = () => {
         const response = await axios.get(
           'https://api.github.com/users/kauawerle/repos',
         )
+        console.log(response)
         setRepos(response.data)
       } catch (error: any) {
         console.error('Erro ao buscar repositórios do GitHub:', error)
@@ -58,16 +58,19 @@ const GitHubRepos = () => {
               justify-center 
               rounded-md 
               bg-[#0B0D3D]
-              shadow
+              shadow-md
+              shadow-background
               hover:bg-[#0F1040]"
               key={repo.id}
             >
-              <Link href={repo.link}>
-                <strong className="text-xl text-text">{repo.name}</strong>
-                <span className="max-w-[80%] text-center text-text">
-                  {repo.description}
-                </span>
-              </Link>
+              <a href={repo.html_url} target="_blank">
+                <div className="flex flex-col items-center justify-center py-10">
+                  <strong className="text-xl text-text">{repo.name}</strong>
+                  <span className="max-w-[80%] text-center text-text">
+                    {repo.description}
+                  </span>
+                </div>
+              </a>
             </div>
           ))}
         </AliceCarousel>

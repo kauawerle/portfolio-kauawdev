@@ -1,7 +1,7 @@
 
 export interface repositoriesProps {
-    id: string;
+  id: string;
   name: string;
   description: string;
-  link: string;
+  html_url: string;
 }

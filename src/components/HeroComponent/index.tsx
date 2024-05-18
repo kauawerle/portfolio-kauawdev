@@ -42,7 +42,7 @@ export default function HeroComponent({ onInput }: any) {
             />
           </div>
         </div>
-        <div>
+        <div className='shadow-lg'>
           <Image width={1240} height={900} src={darthDev} alt="DarthDev" />
         </div>
       </div>

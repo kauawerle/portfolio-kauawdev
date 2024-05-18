@@ -10,7 +10,7 @@ export default function ProjectsComponents() {
         <h3 className="mt-[5rem] px-8 text-left text-5xl text-text lg:p-0">
           Projects Completed
         </h3>
-        <strong className="mt-3 w-full px-8 text-left text-xl text-text lg:w-[24%] lg:p-0 lg:text-center lg:text-2xl">
+        <strong className="mt-3 w-full px-8 text-left text-xl text-text lg:w-[30%] lg:p-0 lg:text-center lg:text-2xl">
           Some projects completed and experiences that i acquired
         </strong>
         <GridComponents />
