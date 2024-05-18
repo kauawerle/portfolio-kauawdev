@@ -15,7 +15,7 @@ const projects: projectProps[] = [
     image: vipus,
     description:
       'I built Vipus using Ionic, Angular, TypeScript, and Bootstrap in the year 2019.',
-    link: 'https://play.google.com/store/apps/details?id=com.i9plus.store.app&hl=pt_BR&gl=US',
+    link: 'https://www.instagram.com/vipusoficial/',
   },
   {
     name: 'Digitaldoc',
