@@ -36,7 +36,7 @@ const projects: projectProps[] = [
     image: certificata,
     description:
       'I work with the certificata using VueJs and typescript. In the year 2022',
-    link: 'https://digitaldoc.com.br/certificata/',
+    link: 'https://certificata.com.br/',
   },
   {
     name: 'Optimize',
