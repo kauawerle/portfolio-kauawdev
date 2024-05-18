@@ -29,15 +29,15 @@ const IndexPage = () => {
 
   const handleInput = (event: any) => {
     const inputValue = event.target.value.toLowerCase();
-    if (inputValue === "yes" || inputValue === "y") {
+    if (inputValue === 'yes' || inputValue === 'y' || inputValue === 's') {
       toast.dark('Achievement Unlocked! 🚀', {
         position: toast.POSITION.TOP_RIGHT,
       })
-      setShowAboutSection(true);
-    } else if (inputValue === "no" || inputValue === "n") {
-      toast.dark("😭😭", {
+      setShowAboutSection(true)
+    } else if (inputValue === 'no' || inputValue === 'n') {
+      toast.dark('😭😭', {
         position: toast.POSITION.TOP_RIGHT,
-      });
+      })
     }
   };
   return (
